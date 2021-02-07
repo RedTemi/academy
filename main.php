@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:dbname=pharmacademy;host=localhost';
-$user = 'root';
-$password = '';
+$dsn = 'mysql:dbname=pharmaca_data;host=localhost:3060';
+$user = 'pharmaca_bread';
+$password = '~~[cr[0rI+n=';
 try {
     $dbh = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 } catch (PDOException $e) {
