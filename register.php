@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: http://localhost:8080");
 require_once('./main.php');
 $auth = new Auth;
 $load = json_decode($_POST['data'],true);
@@ -15,10 +15,10 @@ $acpn = $load['acpn'];
 $status = $load['status'];
 $address = $load['workplace'];
 
-$register = new Register;
+$registerx = new Register;
 if (isset($_POST)) {
   if ($auth->checkEmail($email)) {
     $user = new User($fname, $lname, $email, $phone, $password, $is_pharm, $pcn, $psn, $acpn, $status, $work);
-    $register->register($user);
+    $registerx->registerx($user);
   }
 }

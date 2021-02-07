@@ -86,7 +86,7 @@ class User
 }
 class Register{
     
-    public function register(User $user)
+    public function registerx(User $user)
     {
         global $dbh;
         $stmt = $dbh->prepare("INSERT INTO users() values ?");
