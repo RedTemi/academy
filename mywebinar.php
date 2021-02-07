@@ -1,6 +1,6 @@
 <?php
-session_start();
 header("Access-Control-Allow-Origin: *");
+session_start();
 include_once('pdo.php');
 include_once('mysqli.php');
   if (isset($_SESSION['username'])) {
