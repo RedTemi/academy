@@ -1,0 +1,49 @@
+[06-Jun-2020 19:36:15 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY000]: General error: 1364 Field 'type' doesn't have a default value in /home/pharmaca/public_html/register.php on line 80
+[07-Jun-2020 16:11:01 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php:1856
+Stack trace:
+#0 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1598): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sun, 7 Ju...', '<p>you are reci...')
+#1 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1434): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/pharmaca/public_html/passwordmailer.php(38): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php on line 1856
+[08-Jun-2020 15:29:09 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pharmaca/public_html/livestream.php on line 22
+[08-Jun-2020 15:29:12 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pharmaca/public_html/livestream.php on line 22
+[08-Jun-2020 15:29:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pharmaca/public_html/livestream.php on line 22
+[09-Jun-2020 13:45:41 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[09-Jun-2020 13:45:41 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 13
+[09-Jun-2020 13:45:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[09-Jun-2020 13:45:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 64
+[09-Jun-2020 13:45:48 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[09-Jun-2020 13:45:48 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 13
+[09-Jun-2020 13:45:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[09-Jun-2020 13:45:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 64
+[19-Jun-2020 14:20:33 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[19-Jun-2020 14:20:33 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 13
+[19-Jun-2020 14:20:33 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[19-Jun-2020 14:20:33 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 64
+[19-Jun-2020 14:20:36 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[19-Jun-2020 14:20:36 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 13
+[19-Jun-2020 14:20:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[19-Jun-2020 14:20:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 64
+[19-Jun-2020 14:46:07 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[19-Jun-2020 14:46:07 UTC] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 13
+[19-Jun-2020 14:46:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[19-Jun-2020 14:46:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 64
+[22-Jun-2020 07:03:07 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php:1856
+Stack trace:
+#0 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1598): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 22 J...', '<p>you are reci...')
+#1 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1434): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/pharmaca/public_html/passwordmailer.php(38): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php on line 1856
+[22-Jun-2020 07:03:15 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php:1856
+Stack trace:
+#0 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1598): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 22 J...', '<p>you are reci...')
+#1 /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php(1434): PHPMailer\PHPMailer\PHPMailer->postSend()
+#2 /home/pharmaca/public_html/passwordmailer.php(38): PHPMailer\PHPMailer\PHPMailer->send()
+#3 {main}
+  thrown in /home/pharmaca/public_html/PHPMailer/src/PHPMailer.php on line 1856
+[23-Jun-2020 16:21:57 Africa/Lagos] PHP Warning:  mysqli::query(): (22032/3141): Invalid JSON text in argument 1 to function json_contains: &quot;Invalid value.&quot; at position 0. in /home/pharmaca/public_html/mywebinar.php on line 11
+[23-Jun-2020 16:21:57 Africa/Lagos] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pharmaca/public_html/mywebinar.php on line 32
+[09-Sep-2020 13:16:01 Africa/Lagos] PHP Warning:  PDOStatement::execute(): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'phone' at row 1 in /home/pharmaca/public_html/register.php on line 82
+[09-Sep-2020 13:16:01 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pharmaca/public_html/register.php:82) in /home/pharmaca/public_html/register.php on line 91
