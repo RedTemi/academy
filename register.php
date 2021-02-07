@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:8080|*");
+header("Access-Control-Allow-Origin: http://localhost:8080 | *");
 require_once('./main.php');
 $auth = new Auth;
 $load = json_decode($_POST['data'],true);
