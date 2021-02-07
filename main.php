@@ -1,5 +1,5 @@
 <?php
-$dsn = 'mysql:dbname=pharmaca_data;host=localhost:3060';
+$dsn = 'mysql:dbname=pharmaca_data;host=localhost:3306';
 $user = 'pharmaca_bread';
 $password = '~~[cr[0rI+n=';
 try {
