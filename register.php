@@ -1,5 +1,6 @@
 <?php
 require_once('./main.php');
+header("Access-Control-Allow-Origin: *");
 $auth = new Auth;
 $load = json_decode($_POST['data'],true);
 $fname = $load['fname'];
