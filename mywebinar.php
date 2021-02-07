@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:8080");
+header("Access-Control-Allow-Origin: http://localhost:8080|*");
 session_start();
 include_once('pdo.php');
 include_once('mysqli.php');
