@@ -44,7 +44,7 @@ class Auth
         $stmt = $dbh->prepare("select * from users where email = ?");
         $stmt->execute([$email]);
         $return = $stmt->rowCount();
-        if ($return < 0) {
+        if ($return == 0) {
             return true;
         } else {
             return false;

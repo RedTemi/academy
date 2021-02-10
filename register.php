@@ -26,5 +26,7 @@ if (isset($_POST)) {
     $user = new User($fname, $lname, $email, $phone, $password, $is_pharm,$state,$pcn, $psn, $type, $status, $work);
    echo $registerx->registerx($user)?'done':'failed';
    echo $user;
+  }else{
+    echo 'failed email taken';
   }
 }
