@@ -22,7 +22,7 @@ class Auth
                 echo $data;
                 return true;
             } else {
-                
+
                 return false;
             }
         } else {
@@ -44,18 +44,18 @@ class Auth
         $stmt = $dbh->prepare("select * from users where email = ?");
         $stmt->execute([$email]);
         $return = $stmt->rowCount();
-        if($return<0){
+        if ($return < 0) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
     public function logout()
-    {   
+    {
         session_unset();
         session_destroy();
     }
-} 
+}
 class User
 {
     public  $fname;
@@ -66,58 +66,66 @@ class User
     public  $is_pharm;
     public  $pcn;
     public  $psn;
-    public  $acpn;
+    public  $state;
+    public  $type;
     public  $status;
     public  $workplace;
-   public function __construct($f,$l,$e,$p,$pw,$is_ph,$pcn,$psn,$acpn,$status,$work)
-   {
-       $this->fname = $f;
-       $this->lname = $l;
-       $this->email = $e;
-       $this->phone = $p;
-       $this->password = password_hash($pw,PASSWORD_BCRYPT);
-       $this->is_pharm = $is_ph;
-       $this->pcn = $pcn;
-       $this->psn = $psn;
-       $this->acpn = $acpn;
-       $this->status = $status;
-       $this->workplace = $work;
-   }
+    public function __construct($f, $l, $e, $p, $pw, $is_ph, $state, $pcn, $psn, $type, $status, $work)
+    {
+        $this->fname = $f;
+        $this->lname = $l;
+        $this->email = $e;
+        $this->phone = $p;
+        $this->password = password_hash($pw, PASSWORD_BCRYPT);
+        $this->is_pharm = $is_ph;
+        $this->pcn = $pcn;
+        $this->state = $state;
+        $this->psn = $psn;
+        $this->type = $type;
+        $this->status = $status;
+        $this->workplace = $work;
+    }
 }
-class Register{
-    
+class Register
+{
+
     public function registerx(User $user)
     {
         global $dbh;
-        $stmt = $dbh->prepare("INSERT INTO users() values ?");
-        return $stmt->execute((array)$user)? true:false;
+        $stmt = $dbh->prepare("INSERT INTO 
+        users(fname,lname,email,phone,password,is_pharm,pcn,psn,state,type,status,workplace,webinars) 
+        values(?,?,?,?,?,?,?,?,?,?,?,?)");
+        return $stmt->execute([$user->fname,$user->lname,$user->email,$user->phone,$user->password,$user->is_pharm,$user->pcn,$user->psn,$user->state,$user->type,$user->status,$user->workplace,json_encode([])]) ? true : false;
     }
 }
-class Webinar{
-    public function newWebinar(string $shortname,string $name,string $description,$time,$image,$color,$target)
+class Webinar
+{
+    public function newWebinar(string $name, string $description, $uid, $time, $image, $color, $target)
     {
         global $dbh;
         $stmt = $dbh->prepare("insert into INTO 
-        webinar_data(name, description, short, webinar_banner, webinar_time, webinar_target, color) 
+        webinar_data(name, description, uid, webinar_banner, webinar_time, webinar_target, color) 
         VALUES(?,?,?,?,?,?,?,?)");
-        $stmt->execute([$name,$description,$shortname,$image,$time,$target,$color]);
+        $stmt->execute([$name, $description, $uid, $image, $time, $target, $color]);
     }
-    public function webinarDelivery($params = null){
+    public function webinarDelivery()
+    {
         global $dbh;
         $stmt = $dbh->prepare('select * from webinar_data');
         $stmt->execute();
         $toSend = json_encode($stmt->fetchAll(PDO::FETCH_OBJ));
         echo $toSend;
     }
-    public function checkWebinar_data($userid){
+    public function checkWebinar_data($userid)
+    {
         global $dbh;
         $stmt = $dbh->prepare("select webinars from users where id = ?");
         $stmt->execute([$userid]);
         $data = array();
         $stmt1 = $dbh->prepare("select * from webinars where id in ?");
         $stmt1->execute([$stmt->fetch()]);
-        while($row = $stmt->fetchAll(PDO::FETCH_OBJ)){
-            array_push($data,$row);
+        while ($row = $stmt->fetchAll(PDO::FETCH_OBJ)) {
+            array_push($data, $row);
         }
         return json_encode($data);
     }

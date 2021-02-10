@@ -11,14 +11,15 @@ $password = $load['password'];
 $is_pharm = $load['is_pharm'];
 $pcn = $load['pcn'];
 $psn = $load['psn'];
-$acpn = $load['acpn'];
+$type = $load['type'];
 $status = $load['status'];
 $address = $load['workplace'];
+$state = $load['state'];
 
 $registerx = new Register;
 if (isset($_POST)) {
   if ($auth->checkEmail($email)) {
-    $user = new User($fname, $lname, $email, $phone, $password, $is_pharm, $pcn, $psn, $acpn, $status, $work);
+    $user = new User($fname, $lname, $email, $phone, $password, $is_pharm,$state,$pcn, $psn, $type, $status, $work);
     $registerx->registerx($user);
   }
 }
