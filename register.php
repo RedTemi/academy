@@ -12,7 +12,7 @@ $lname = $load['lname'];
 $email = $load['email'];
 $phone = $load['phone'];
 $password = $load['password'];
-$is_pharm = $load['is_pharm'];
+$is_pharm = $load['isPharm'];
 $pcn = $load['pcn'];
 $psn = $load['psn'];
 $type = $load['type'];
@@ -24,6 +24,7 @@ $registerx = new Register;
 if (isset($_POST)) {
   if ($auth->checkEmail($email)) {
     $user = new User($fname, $lname, $email, $phone, $password, $is_pharm,$state,$pcn, $psn, $type, $status, $work);
-   echo $registerx->registerx($user);
+   echo $registerx->registerx($user)?'done':'failed';
+   echo $user;
   }
 }
