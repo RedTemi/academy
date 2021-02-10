@@ -7,6 +7,7 @@ session_start();
 require_once('./main.php');
 $auth = new Auth;
 $load = json_decode($_POST['data'],true);
+var_dump($_POST);
 $fname = $load['fname'];
 $lname = $load['lname'];
 $email = $load['email'];
