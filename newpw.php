@@ -1,5 +1,4 @@
 <?php
-include_once('templates/header.php');
 if(isset($_POST['submit_password']) && $_POST['key'] && $_POST['reset'])
 {
   include_once('pdo.php');
@@ -16,5 +15,4 @@ if(isset($_POST['submit_password']) && $_POST['key'] && $_POST['reset'])
       echo '<p>something went wrong.</p>';
   }
 }
-include_once('templates/footer.php');
 ?>
