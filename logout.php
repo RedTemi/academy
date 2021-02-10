@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://localhost:8080 | *");
+header("Access-Control-Allow-Origin:https://pharmacademy.com.ng");
 session_start();
 require_once('main.php');
 $auth = new Auth;
